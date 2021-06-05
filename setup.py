@@ -1,26 +1,31 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
+__version__ = '0.1.0'
+
+with open('README.md', 'r', encoding='utf-8') as file:
+    long_description = file.read()
 
 setup(
-    name="password_generator",
-    version="0.1.0",
+    name="password-generator-module",
+    version=__version__,
     description="Generate strong passwords quickly",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Mazzya",
     author_mail="whissan01@gmail.com",
     license="MIT",
     url="https://github.com/Mazzya/password-generator-module",
+    packages=find_packages(),
+    keywords=['python', 'password'],
     classifiers=[
         "Programming Language :: Python :: 3.0",
-        "Programming Language :: Python :: 3.1",
-        "Programming Language :: Python :: 3.2",
-        "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10"
+        "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: MIT License",
-        "Topic :: Software Development :: Libraries :: Python Modules"
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Security",
+        "Topic :: Software Development :: Version Control :: Git",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows :: Windows 10",
+        "Operating System :: Unix"
     ]
 )

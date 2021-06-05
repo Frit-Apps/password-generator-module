@@ -6,14 +6,12 @@ Visit [Change Log]()
 ### How to install
 To install the module, you must type the following command in the console :
 ```python
-pip install password-generator
+pip install password-generator-module
 ```
 ### How to use
 To use the module, it is necessary to import it before :
 ```python
-import password_generator
-# OR
-from password_generator import *
+from password_generator.password import Password
 ```
 ### How to generate a password
 ```python
