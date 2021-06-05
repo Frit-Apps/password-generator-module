@@ -25,6 +25,7 @@ password = p.generate_password(12)
 
 # Show the generated password
 print(password)
-
-> Sx875SFD/.qsd
+```
+```
+> FYsY>uFnHnp^
 ```
