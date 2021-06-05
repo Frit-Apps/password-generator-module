@@ -7,7 +7,6 @@
 import string
 import secrets
 
-
 class Password:
 
     def generate_password(self, length: int) -> str:
