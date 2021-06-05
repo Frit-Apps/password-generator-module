@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="password-generator",
+    name="password_generator",
     version="0.1.0",
     description="Generate strong passwords quickly",
     author="Mazzya",

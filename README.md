@@ -5,18 +5,18 @@ This project has been adapted from the [original version](https://github.com/Maz
 Visit [Change Log]()
 ### How to install
 To install the module, you must type the following command in the console :
-```
+```python
 pip install password-generator
 ```
 ### How to use
 To use the module, it is necessary to import it before :
-```
-import password-generator
-or
-from password-generator import *
+```python
+import password_generator
+# OR
+from password_generator import *
 ```
 ### How to generate a password
-```
+```python
 # Instantiate the password object
 p = Password()
 
