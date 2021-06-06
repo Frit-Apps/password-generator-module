@@ -2,7 +2,7 @@
 An incredible module capable of generating very secure passwords. 
 This project has been adapted from the [original version](https://github.com/Mazzya/passwordgenerator), which is an interactive script.
 
-Visit [Change Log]()
+Visit [Change Log](https://github.com/Mazzya/password-generator-module/blob/main/CHANGELOG.md)
 ### How to install
 To install the module, you must type the following command in the console :
 ```python
