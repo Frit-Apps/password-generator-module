@@ -9,6 +9,8 @@ This project has been adapted from the [original version](https://github.com/Maz
 
 Visit [Change Log](https://github.com/Mazzya/password-generator-module/blob/main/CHANGELOG.md)
 ### How to install
+PyPi project : https://pypi.org/project/password-generator-module/
+
 To install the module, you must type the following command in the console :
 ```python
 pip install password-generator-module
