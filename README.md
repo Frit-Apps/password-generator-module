@@ -30,4 +30,3 @@ print(password)
 ```
 > FYsY>uFnHnp^
 ```
-We are actively working on new features that will be available soon. Any contribution is welcome 😃
