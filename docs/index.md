@@ -1,4 +1,5 @@
-# Password Generator Module
+# Welcome to Password Generator Module documentation !
+
 An incredible module capable of generating very secure passwords. 
 This project has been adapted from the [original version](https://github.com/Mazzya/passwordgenerator), which is an interactive script.
 
@@ -7,31 +8,13 @@ This project has been adapted from the [original version](https://github.com/Maz
 [![Documentation Status](https://readthedocs.org/projects/password-generator-module/badge/?version=latest)](https://password-generator-module.readthedocs.io/en/latest/?badge=latest)
 
 
-Visit [Change Log](https://github.com/Mazzya/password-generator-module/blob/main/CHANGELOG.md)
-### How to install
-PyPi project : https://pypi.org/project/password-generator-module/
+Feel free to visit the [changelog](CHANGELOG.md) to see the history of the different versions.
 
-To install the module, you must type the following command in the console :
-```python
-pip install password-generator-module
-```
-### How to use
-To use the module, it is necessary to import it before :
-```python
-from password_generator.password import Password
-```
-### How to generate a password
-```python
-# Instantiate the password object
-p = Password()
+PGM has been developed by the [Frit Apps](https://github.com/Frit-Apps) organization founded by [Mazzya](https://github.com/mazzya).
 
-# Let's use the function generate_password () to generate a password of 12 characters
-password = p.generate_password(12)
+Get started with understanding PGM with basic [examples](get_started.md) !
 
-# Show the generated password
-print(password)
-```
-```
-> FYsY>uFnHnp^
-```
-We are actively working on new features that will be available soon. Any contribution is welcome 😃
+Visit the [code reference](pgm-reference.md) if you want to understand in more detail the different functionalities of PGM.
+
+!!! note
+    We are actively working on new features that will be available soon. Any contribution is welcome.

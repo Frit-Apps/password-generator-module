@@ -5,13 +5,19 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: teal
-    accent: purple
+    primary: blue
+    accent: light blue
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/frit-apps/password-generator-module
+repo_name: frit-apps/password-generator-module
 
 
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
+  - admonition
 
 
 plugins:
@@ -19,5 +25,20 @@ plugins:
   - mkdocstrings:
       handler: python
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/frit-apps/password-generator-module
+
+copyright: Copyright &copy; 2021 Frit Apps Organization
+
 nav:
-  - Introduction: index.md
+  - Home: index.md
+  - Get started:
+    - 'Examples': 'get_started.md'
+    - 'Code references': 'pgm-reference.md'
+  - Download: 'download.md'
+  - About:
+    - 'PGM Project': 'about.md'
+    - 'Change Log': 'CHANGELOG.md'
+    - 'License': 'LICENSE.md'
