@@ -4,6 +4,8 @@ This project has been adapted from the [original version](https://github.com/Maz
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/password-generator-module)
 ![GitHub](https://img.shields.io/github/license/mazzya/password-generator-module)
+[![Documentation Status](https://readthedocs.org/projects/password-generator-module/badge/?version=latest)](https://password-generator-module.readthedocs.io/en/latest/?badge=latest)
+
 
 Visit [Change Log](https://github.com/Mazzya/password-generator-module/blob/main/CHANGELOG.md)
 ### How to install
