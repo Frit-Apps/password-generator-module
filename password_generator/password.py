@@ -7,10 +7,21 @@
 import string
 import secrets
 
+
 class Password:
 
     def generate_password(self, length: int) -> str:
-        """ This function generates a password with the length it receives as an argument """
+
+        """
+        This function generates a password with the length it receives as an argument.
+
+        Parameters:
+            length (int): Password length
+
+        Returns:
+            password (str): Password generated
+        """
+
         try:
             chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[:-9])
             if length >= 4:
