@@ -4,9 +4,13 @@ This project has been adapted from the [original version](https://github.com/Maz
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mazzya/password-generator-module)
 ![GitHub](https://img.shields.io/github/license/mazzya/password-generator-module)
+[![Documentation Status](https://readthedocs.org/projects/password-generator-module/badge/?version=latest)](https://password-generator-module.readthedocs.io/en/latest/?badge=latest)
+
 
 Visit [Change Log](https://github.com/Mazzya/password-generator-module/blob/main/CHANGELOG.md)
 ### How to install
+PyPi project : https://pypi.org/project/password-generator-module/
+
 To install the module, you must type the following command in the console :
 ```python
 pip install password-generator-module
@@ -28,6 +32,6 @@ password = p.generate_password(12)
 print(password)
 ```
 ```
->> FYsY>uFnHnp^
+> FYsY>uFnHnp^
 ```
 We are actively working on new features that will be available soon. Any contribution is welcome 😃
