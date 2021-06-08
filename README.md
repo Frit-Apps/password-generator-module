@@ -6,8 +6,8 @@ This project has been adapted from the [original version](https://github.com/Maz
 ![GitHub](https://img.shields.io/github/license/mazzya/password-generator-module)
 [![Documentation Status](https://readthedocs.org/projects/password-generator-module/badge/?version=latest)](https://password-generator-module.readthedocs.io/en/latest/?badge=latest)
 
-
 Visit [Change Log](https://github.com/Frit-Apps/password-generator-module/blob/main/docs/CHANGELOG.md)
+
 ### How to install
 PyPi project : https://pypi.org/project/password-generator-module/
 
