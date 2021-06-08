@@ -30,7 +30,7 @@ class Password:
                 for i in range(length): password += secrets.choice(chars)
                 return password
             else:
-                print("The password must contain at least 4 characters")
+                raise ValueError("The password must contain at least 4 characters")
         except TypeError:
             """If the user passes a non-numeric value as a parameter"""
             print("Please enter a numeric value")
