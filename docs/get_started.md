@@ -1,4 +1,5 @@
-> PGM is very easy to use, seriously ! 
+!!! success ""
+    PGM is very easy to use, seriously ! 
 
 ### How to generate a password
 !!! Example
