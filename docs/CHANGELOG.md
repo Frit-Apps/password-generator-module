@@ -1,5 +1,5 @@
 # Change Log
-## v0.1.2 - June XX, 2021
+## v0.1.2 - June 10, 2021
 
 **Added**
 
