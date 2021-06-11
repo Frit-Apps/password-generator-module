@@ -1,4 +1,4 @@
-# Welcome to Password Generator Module documentation !
+# Welcome to Password Generator Module 0.1.2 documentation !
 
 An incredible module capable of generating very secure passwords. 
 This project has been adapted from the [original version](https://github.com/Mazzya/passwordgenerator), which is an interactive script.
