@@ -1,4 +1,18 @@
 # Change Log
+## v0.2.0 - June 15, 2021
+**Added:**
+
+* Cryptography module
+* **Function to encrypt passwords :**  Now it is possible to encrypt the passwords that are generated
+* **Function to decrypt passwords :** Now it is possible to decrypt the encrypted passwords
+* Version number has been added to the main documentation page
+* Two examples of the new functions have been added to the documentation.
+* A documentation link has been added in README.md
+
+
+**Changed:**
+
+* Documentation has been aesthetically improved
 ## v0.1.2 - June 10, 2021
 
 **Added**

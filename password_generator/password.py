@@ -3,13 +3,15 @@
 # Repository address: https://github.com/frit-apps/password-generator-module
 # Documentation: https://password-generator-module.readthedocs.io/en/latest/
 # This is a module that allows you to generate passwords safely and quickly
-# Version 0.1.2
+# Version 0.2.0
 
 import string
 import secrets
+from cryptography.fernet import Fernet
 
 
 class Password:
+    __key = Fernet.generate_key()
 
     def generate_password(self, length: int) -> str:
 
@@ -35,3 +37,37 @@ class Password:
         except TypeError:
             """If the user passes a non-numeric value as a parameter"""
             print("Please enter a numeric value")
+
+    def encrypt_password(self, password: str) -> bytes:
+        """
+        This function encrypts the generated password
+
+        Parameters:
+            password (str): The password that has been generated
+
+        Returns:
+            encrypted_password (bytes): The encrypted password in bytes
+        """
+        try:
+            f = Fernet(self.__key)
+            encrypted_password = f.encrypt(password.encode())
+            return encrypted_password
+        except AttributeError:
+            print("Enter the password generated")
+
+    def decrypt_password(self, encrypted_password: bytes) -> str:
+        """
+        This function decrypts the password that has been encrypted so that it can be read
+
+        Parameters:
+            encrypted_password (bytes): The encrypted password
+        Returns:
+            password (str): The decrypted password
+        """
+        try:
+            f = Fernet(self.__key)
+            decrypted = f.decrypt(encrypted_password)
+            password = decrypted.decode()
+            return password
+        except TypeError:
+            print("Enter the encrypted password")

@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-__version__ = '0.1.2'
+__version__ = '0.2.0'
 
 with open('README.md', 'r', encoding='utf-8') as file:
     long_description = file.read()
@@ -19,7 +19,7 @@ setup(
     keywords=['python', 'password'],
     classifiers=[
         "Programming Language :: Python :: 3.0",
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: MIT License",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Security",

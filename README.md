@@ -8,8 +8,10 @@ This project has been adapted from the [original version](https://github.com/Maz
 
 Visit [Change Log](https://github.com/Frit-Apps/password-generator-module/blob/main/docs/CHANGELOG.md)
 
+Visit the official [documentation](https://password-generator-module.readthedocs.io/en/latest/)
+
 ### How to install
-PyPi project : https://pypi.org/project/password-generator-module/
+[PyPi project](https://pypi.org/project/password-generator-module/)
 
 To install the module, you must type the following command in the console :
 ```python
