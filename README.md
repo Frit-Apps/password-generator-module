@@ -34,6 +34,6 @@ password = p.generate_password(12)
 print(password)
 ```
 ```
-> FYsY>uFnHnp^
+> E=Ym*08jYa<I
 ```
 We are actively working on new features that will be available soon. Any contribution is welcome 😃
