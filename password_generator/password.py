@@ -3,14 +3,16 @@
 # Repository address: https://github.com/frit-apps/password-generator-module
 # Documentation: https://password-generator-module.readthedocs.io/en/latest/
 # This is a module that allows you to generate passwords safely and quickly
-# Version 0.2.0
+# Version 0.3.0
 
 import string
 import secrets
 from cryptography.fernet import Fernet
+import re
 
 
 class Password:
+
     __key = Fernet.generate_key()
 
     def generate_password(self, length: int) -> str:
@@ -26,7 +28,7 @@ class Password:
         """
 
         try:
-            chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[:-9])
+            chars = list(string.digits) + list(string.ascii_letters) + list(string.printable[62:-9])
             if length >= 4:
                 """If the length is greater than or equal to 4"""
                 password = ""
@@ -71,3 +73,58 @@ class Password:
             return password
         except TypeError:
             print("Enter the encrypted password")
+
+    def check_password(self, password: str):
+        """
+        This function checks the password strength
+
+        Parameters:
+            password (str): The password to be tested
+        """
+        levels = ("HIGH", "MEDIUM", "LOW")
+        try:
+            if len(password) >= 8:
+                if password.isdigit():
+                    print(levels[2])
+                elif password.isalpha():
+                    print(levels[2])
+                else:
+                    if re.search('[a-z]', password):
+                        if re.search('[A-Z]', password):
+                            if re.search('[0-9]', password):
+                                if re.search('''[!"#$%&'()*+,-./:;<=>?@[\\]^_`{]''', password):
+                                    print(levels[0])
+                                else:
+                                    print(levels[1])
+                            else:
+                                print(levels[1])
+                        else:
+                            print(levels[1])
+                    else:
+                        print(levels[1])
+
+            elif len(password) >= 6:
+                if password.isdigit():
+                    print(levels[2])
+                elif password.isalpha():
+                    print(levels[2])
+                else:
+                    if re.search('[a-z]', password):
+                        if re.search('[A-Z]', password):
+                            if re.search('[0-9]', password):
+                                if re.search('''[!"#$%&'()*+,-./:;<=>?@[\\]^_`{]''', password):
+                                    print(levels[1])
+                                else:
+                                    print(levels[2])
+                            else:
+                                print(levels[2])
+                        else:
+                            print(levels[2])
+                    else:
+                        print(levels[2])
+            else:
+                print(levels[2])
+        except TypeError:
+            print("Please enter a text string")
+
+

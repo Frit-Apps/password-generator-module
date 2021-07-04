@@ -44,7 +44,7 @@
     b'gAAAAABgxeGoLXm2ZipeY49mxAKR6UDsARB1z2Dm9LJEp3cR1qhk2e7tMXfRBu7pPJJqPx6Ip-zBQ8fGdKJR-BR42EJt5RdOSw=='
     ```
 !!! success ""
-    As you can see, encrypting passwords with PGM is very easy!
+    As you can see, encrypting passwords with PGM is very easy !
 
 #### How to decrypt a password
 !!! Example
@@ -61,3 +61,28 @@
     ```
 !!! success ""
     Easier, impossible, right ?
+
+#### How to check password strength
+!!! Example
+    It is important to verify the strength of the passwords that are generated, that is why this function exists. There are 3 levels of password strength:
+    
+    * **High :** The password contains at least 8 characters, it is made up of numbers, letters and special symbols.
+    * **Medium :** The password contains at least 6 characters, it is made up of numbers, letters and special symbols.
+    * **Low :** This level is attributed to whose passwords that only contain numbers or only letters or are only composed of 4 characters
+
+    Let's see how to check the strength level of the password that we generate with the previous example, this is the password that we are going to test :
+    ```
+    As,%$YF'_R9X
+    ```
+    To check the strength level of the password, we will use the ```check_password()``` function :
+    ```python
+    password = "As,%$YF'_R9X"
+    p.check_password(password)
+    ```
+    If you look at the console, you will see the following :
+    ```
+    HIGH
+    ```
+    This message tells us that the password is strong and secure.
+!!! warning ""
+    Remember, use strong passwords and change them frequently !
