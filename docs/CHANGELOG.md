@@ -4,6 +4,7 @@
 
 * **Function to check passwords strength :** Now it is possible to verify the strength level of the passwords that are generated to make sure they are secure,
   the verification consists of 3 strength levels : High, Medium and Low
+* An example of the new function has been added in the documentation
 
 ## v0.2.0 - June 15, 2021
 **Added:**
@@ -12,7 +13,7 @@
 * **Function to encrypt passwords :**  Now it is possible to encrypt the passwords that are generated
 * **Function to decrypt passwords :** Now it is possible to decrypt the encrypted passwords
 * Version number has been added to the main documentation page
-* Two examples of the new functions have been added to the documentation.
+* Two examples of the new functions have been added to the documentation
 * A documentation link has been added in README.md
 
 
@@ -28,7 +29,7 @@
 **Changed**
 
 * The module information has been updated within the code
-* When the user enters a number of characters for the password less than 4, the exception ValueError is called, before, the console only showed an error message.
+* When the user enters a number of characters for the password less than 4, the exception ValueError is called, before, the console only showed an error message
 * Aesthetic changes in documentation
 
 **Fixed:**
