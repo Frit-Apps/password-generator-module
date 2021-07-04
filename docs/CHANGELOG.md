@@ -1,5 +1,5 @@
 # Change Log
-## v0.3.0 - July XX, 2021
+## v0.3.0 - July 04, 2021
 **Added:**
 
 * **Function to check passwords strength :** Now it is possible to verify the strength level of the passwords that are generated to make sure they are secure,
