@@ -37,3 +37,6 @@ print(password)
 > E=Ym*08jYa<I
 ```
 We are actively working on new features that will be available soon. Any contribution is welcome 😃
+
+#### Discord Server
+We have a discord server in case you have any questions or want to be informed about the project news. Do not hesitate to [join us](https://discord.gg/mZF9ywQzdg), we are waiting for you.
